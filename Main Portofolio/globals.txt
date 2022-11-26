@@ -1,0 +1,13 @@
+main-color: #37DC94;
+alt-color: #162C9B;
+sec-color: #FF5126;
+good-blue: #5EB1BF;
+arctic-lime: #E0FF4F;
+white-deep: #FEFFFE;
+cold-white: #f0efeb;
+skobeloff: #0F7173;
+red-salsa: #F05D5E;
+pale-silver: #CEC3C1;
+rusty-red: #DE3C4B; 
+rich-black: #040404;
+timeberwolf: #D7D9CE;

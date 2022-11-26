@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC TAC TOE</title>
+</head>
+<body>
+    
+    <div class="parent">
+        <h2 class="game-title" id="gameTitle">X O <span>GAME</span></h2>
+        <div class="game-container">
+            <div class="square" id="square1" onclick="game(this.id)"></div>
+            <div class="square" id="square2" onclick="game(this.id)"></div>
+            <div class="square" id="square3" onclick="game(this.id)"></div>
+            <div class="square" id="square4" onclick="game(this.id)"></div>
+            <div class="square" id="square5" onclick="game(this.id)"></div>
+            <div class="square" id="square6" onclick="game(this.id)"></div>
+            <div class="square" id="square7" onclick="game(this.id)"></div>
+            <div class="square" id="square8" onclick="game(this.id)"></div>
+            <div class="square" id="square9" onclick="game(this.id)"></div>
+        </div>
+        <div class="winner-popUp" id="winner-popUp">
+            <h2 id="winner-cong"><span id="winnerSpan">x</span> You Win</h2>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cairo, sans-serif;
+}
+
+body{
+    background-color: #222;
+}
+
+
+html{
+    overflow-x: hidden;
+}
+
+.parent{
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.parent .game-title{
+    font-size: 40px;
+    color: #009988;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 250px;
+    border: 2px solid #009988;
+    margin: 30px auto;
+    border-radius: 20%;
+    background-color: #eee;
+}
+
+.parent .game-title span{
+    color: #115088;
+}
+
+.parent .game-container{
+    width: 500px;
+    height: 500px;
+    border:4px solid #ddd;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parent .game-container .square{
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    transition: 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #009988;
+    text-transform: uppercase;
+}
+.parent .game-container .square:hover{
+    background-color: #d8d8d8;
+}
+.parent .game-container .square:nth-child(1), .parent .game-container .square:nth-child(2){
+    border-right: 2px solid #eee;
+}
+.parent .game-container .square:nth-child(1), .parent .game-container .square:nth-child(2),.parent .game-container .square:nth-child(3){
+    border-bottom: 2px solid #eee;
+}
+
+.parent .game-container .square:nth-child(4), .parent .game-container .square:nth-child(5){
+    border-right: 2px solid #eee;
+}
+.parent .game-container .square:nth-child(4), .parent .game-container .square:nth-child(5),.parent .game-container .square:nth-child(6){
+    border-bottom: 2px solid #eee;
+}
+
+.parent .game-container .square:nth-child(7), .parent .game-container .square:nth-child(8){
+    border-right: 2px solid #eee;
+}
+
+.parent .winner-popUp{
+    width: 250px;
+    height: 250px;
+    background-color: #009988;
+    border: 2px solid #eee;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    left: -100vh;
+}
+
+
+.parent .winner-popUp h2{
+    font-size: 50px;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.parent .winner-popUp h2 span{
+    font-size: 60px;
+    color: #115088;
+    text-transform: uppercase;
+}
+
+@media(max-width :584px){
+    .parent .game-container{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .parent .game-container{
+        width: 300px;
+        height: 300px;
+    }
+}

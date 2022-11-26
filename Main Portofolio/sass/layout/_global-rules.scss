@@ -1,0 +1,62 @@
+// Import Variables
+
+@use '../helpers/variables' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cairo,sans-serif;
+}
+
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: $white-deep;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $main-color;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $main-dark;
+    color: $white-deep;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: $cold-white;
+}
+
+.main-title{
+    width: 280px;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: $cold-white;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-dark;
+    letter-spacing: 2px;
+    border-top: 4px solid $main-color;
+    margin: auto;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: $main-transition ease-in-out;
+    &:hover{
+        border-color: $alt-color;
+        background-color: $main-color;
+        color: $cold-white;
+    }
+    @media(max-width: 991px){
+        width: 180px !important;
+    }
+}

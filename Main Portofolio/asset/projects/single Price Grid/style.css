@@ -1,0 +1,239 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  box-sizing: inherit;
+}
+
+/* Start*/
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(241, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wrapper h3 {
+  text-transform: capitalize;
+}
+
+.wrapper .parent {
+  width: 55%;
+  height: 510px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.wrapper .parent .top-container {
+  padding: 35px 32px;
+  height: 50%;
+  border-bottom: 2px solid rgba(221, 221, 221, 0.751);
+}
+
+.wrapper .parent .top-container .card-title {
+  font-size: 27px;
+  color: rgb(104, 188, 188);
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.wrapper .parent .top-container .card-desc {
+  font-size: 17px;
+  color: rgb(206, 206, 27);
+  padding-bottom: 16px;
+}
+
+.wrapper .parent .top-container .card-desc-alt {
+  color: rgb(201, 201, 201);
+  width: 80%;
+  line-height: 1.89;
+}
+
+@media (max-width: 1040px) {
+    .wrapper .parent .top-container .card-title{
+        font-size: 20px;
+    }
+    .wrapper .parent .top-container .card-desc{
+        font-size: 15px;
+    }
+    .wrapper .parent .top-container .card-desc-alt{
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+.wrapper .parent .bottom-container {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper .parent .bottom-container .left-section,
+.right-section {
+  padding: 30px 32px;
+  width: 50%;
+}
+
+.wrapper .parent .bottom-container .left-section {
+  background-color: #2bb3b1;
+  color: #fff;
+  box-shadow: 4px 4px 5px 1px rgba(106, 195, 194, 0.937) nset;
+}
+
+.wrapper .parent .bottom-container .left-section .section-title {
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.wrapper .parent .bottom-container .left-section .price {
+  font-size: 23px;
+  font-weight: 500;
+  position: relative;
+}
+
+.wrapper .parent .bottom-container .left-section .price::before {
+  content: "$";
+  padding-right: 1px;
+}
+
+.wrapper .parent .bottom-container .left-section .price::after {
+  content: "per month";
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.49);
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  transform: translateY(-50%);
+}
+
+.wrapper .parent .bottom-container .left-section .section-proper {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.924);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.sign-up-btn {
+  background-color: transparent;
+  border: 1px solid rgb(126, 208, 44);
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(119, 222, 16);
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wrapper .parent .bottom-container .right-section {
+  background-color: #4abebd;
+  color: #fff;
+  box-shadow: 4px 4px 5px 1px #69b5b4f5 inset;
+}
+
+.wrapper .parent .bottom-container .right-section .section-title {
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.wrapper .parent .bottom-container .right-section .section-desc {
+  color: rgba(228, 228, 228, 0.927);
+  line-height: 1.89;
+}
+
+@media (max-width: 1040px) {
+    .wrapper .parent .bottom-container .right-section .section-desc{
+        font-size: 12px;
+    }
+}
+
+
+/* End*/
+
+/* Styling */
+
+.wrapper .box{
+    position: absolute;
+}
+
+.wrapper .box.square{
+    width: 40px;
+    height: 80px;
+    border: 4px solid #ddd;
+    background-color: transparent;
+    transform: rotate(45deg);
+    left: 80px;
+    top: 80px;
+}
+
+.wrapper .box.circle{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 4px solid #ddd;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+
+.wrapper .box.categorys{
+    width: 40px;
+    height: 80px;
+    border: 4px solid #ddd;
+    background-color: transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wrapper .categorys .circles-group{
+    width: 100%;
+    height: calc(100% / 4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper .box.categorys .circles-group .circles{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: rgb(150, 150, 150);
+}
+
+.wrapper .box.circle2{
+    top: unset;
+    bottom: 80px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .box.circle2 .circle-in{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(181, 181, 181, 0.638);
+    border-radius: 50%;
+
+}
+
+
